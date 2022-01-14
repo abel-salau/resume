@@ -1,0 +1,201 @@
+% Abel's resume
+% Accurate as of: Jan 14th 2022
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{tabularx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{table}[]
+    \begin{tabularx}{\textwidth}{Xr}
+        \Huge{Abel Salau}
+        &
+        \begin{tabular}[c]{@{}r@{}}
+            \href{mailto:asalau54@gmail.com}{\texttt{asalau54@gmail.com}} \\
+            \href{tel:+16475705455}{\texttt{(647) 570 5455}} \\
+            \href{https://abel-salau.github.io}{\texttt{abel-salau.github.io}} \\
+        \end{tabular}
+    \end{tabularx}
+\end{table}
+
+%-----------SKILLS-----------------
+\shorterSection{Technical Skills}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+        \textbf{Languages}{: Scheme, Python, C, R, SQL}
+    } \vspace{-5pt}
+
+     \vspace{-5pt}
+
+    \item{
+        \textbf{Tools/Environments}{: Power BI, Microsoft Excel, Google Workspace, IDEs, VSCode, RStudio, Git}
+    }
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Professional Experience }
+ \resumeSubHeadingListStart
+ 
+    \resumeSubheading
+      {Backpacker College}{Waterloo, ON}
+      {System Administrator}{September 2021 - Present}
+      \resumeItemListStart
+         \resumeItem{Large-Scale System Management}{Tasked to continuously improve and maintain digital curated Backpacker College content within new and established systems.}
+         \resumeItem{Automation and Integration}{ Responsible for building over 25 listings weekly and creating automation scripts to streamline their integration with partner platforms such as Guesty, AirBnB, TripAdvisor and VRBO.}
+         \resumeItem{Customer Correspondence}{Involved in the interaction and fulfilment of bookings with potential backpackers and room providers alike.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Rise in STEM}{Toronto, ON}
+    {Research and Evaluation Assistant} {August 2021 - Present}
+    \resumeItemListStart
+        \resumeItem{Data Collation}{Responsible for research and data collation on delegated projects.}
+        \resumeItem{Membership Support}{Providing support for general members transition into post-secondary and the workforce.}
+        \resumeItem{Personnel Management}{Responsible for connecting general members to our community networks and various provided support systems in a fast-paced startup environment.}
+    \resumeItemListEnd
+
+    
+
+  \resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+     \resumeSubItem{\href{https://github.com/abel-salau/happy-x-covid}{Population Data Exploration}}
+     {Created data-set from multiple sources on COVID-19 and general population data \\
+     \emph{Python (NumPy, Pandas, BeautifulSoup4, Sklearn,)}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Ranked countries based on their happiness index gotten from the 2021 World Happiness Report.
+            \item Webscrapped through dynamic sites/databases to get real-time updates on recorded COVID-19 statistics.
+            \item Cleaned up data from all sources to only include relevant information in the resulting data-set.
+        \end{itemize}
+     }
+  \resumeSubItem{\href{https://github.com/abel-salau/fin.dash}{Personal Finance Dashboard}}
+  {Visualization of inputted monetary data \\
+      \emph{Excel (Pivot tables, Formulas), Power BI (Queries)}
+        \vspace{-5pt}
+        \begin{itemize}
+            \item Designed an interactive, customizable dashboard to visualize income, spending and budget on a month to month basis.
+            \item Integrated a separate simple excel worksheet to make data insertion intuitive.
+            \item Implemented a minimalist design that highlights only the most important data first.
+        \end{itemize}
+     }
+  \resumeSubHeadingListEnd
+ 
+
+%-----------VOLUNTEERING-----------------
+\shorterSection{Volunteer Experience}
+  \resumeSubHeadingListStart
+ 
+    \resumeSubheading
+      {University of Waterloo and Wilfrid Laurier's Double Degree Club}{Waterloo, ON}
+      {Director of Finance and Internal Affairs}{January 2021 - April 2021}
+        \begin{itemize}
+            \item Keeping an up-to-date record, in Excel, of all the transactions made and the purpose of all expenditures.
+            \item Maintaining detailed financial records and handing club reimbursements.
+            \item Constructing a budget to be approved by Mathsoc and Laurier SU, and adhered to by the club for the term.
+        \end{itemize}
+
+    \resumeSubheading
+    {Y.M.C.A}{Toronto, ON}
+    {Newcomer Youth Leadership Development Mentor} {September 2019 - July 2020}
+        \begin{itemize}
+            \item Responsible for tutoring and mentoring newcomers and at-risk youth. 
+            \item In-charge of planning and directing company events, including budgeting and venue sourcing. 
+        \end{itemize}
+
+    
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Waterloo, ON}
+      {Bachelor of Mathematical Economics }{Expected Graduation: 2024}
+      \vspace{-10pt}
+
+
+\end{document}
